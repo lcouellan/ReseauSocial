@@ -1,0 +1,183 @@
+body{
+	position: absolute;
+	background-color: rgb(255, 104, 29);
+	color: black;
+	font-family: Arial;
+	z-index: 1;
+	min-height: 100%;
+	width:100%;
+	left:-10px;
+	top:-10px;
+}
+
+*{
+	font-size: 18px;
+}
+
+
+#bloc_fond
+{
+//border: 1px solid black;
+	background:	url('../Images/fond2.jpg') no-repeat;
+	background-position: center;
+	color: white;
+	height: 792px;
+	width: 100.9%;
+	min-width: 1450px;
+	position: absolute;
+	z-index: 1;
+	top:-10px;
+	left:-10px;
+	right:-10px;
+}
+
+section
+{
+	width: 70%;
+	min-width: 1000px;
+	min-height: 760px;
+	position: relative;
+	margin-top: 90px;
+	margin-left: 60px;
+	left: 280px;
+	z-index: 2;
+	
+	border: 1px solid orange;
+	box-shadow: 6px 6px 6px rgb(255, 104, 29);
+	background-color: rgb(208, 208, 217);
+}
+
+
+.connect_left{
+	position:relative;
+	top: -50px;
+	display: inline-block;
+	padding: 50px;
+}
+
+.connect_right{
+	position:relative;
+	top: 100px;
+	display: inline-block;
+	margin-left: 140px;
+}
+
+
+.logo
+{
+	background: url('../Images/logoSite.png') no-repeat;
+	position: relative;
+	height: 23px;
+	width: 300px;
+}
+
+.logoRecherche{
+	position: relative;
+	top: 8px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.afficheBar{
+	position: absolute;
+	top:15px;
+	right: 20px;
+}
+
+
+
+
+
+
+
+
+footer{
+	background-color: rgb(208, 208, 217);
+	border: 1px solid white;
+	box-shadow: 6px 6px 6px white;
+	min-width: 30px;
+	height:60px;
+	width: 97.5%;
+	position:relative;
+	margin-bottom:10px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+
+header nav{
+	background-color: rgb(208, 208, 217);
+	min-width: 30px;
+	width: 98.3%;
+	display: inline-block;
+	margin-left:12px;
+	position: fixed;
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	border: 1px solid rgb(255, 104, 29);
+	box-shadow: 6px 6px 6px rgb(255, 104, 29);
+}
+
+header nav li form{
+	position: relative;
+	margin: -10;
+}
+
+header nav li
+{
+	border: none;
+	border-radius: none;
+	box-shadow: none;
+	display: inline-block;
+    margin-left: 10px;
+}
+
+header nav li :hover
+{
+	position: relative;
+	color:black;
+}
+
+header nav li a{
+	color: black;
+	text-decoration: none;
+}
+
+
+.nav_left
+{
+	border: 1px solid rgb(255, 104, 29);
+	box-shadow: 6px 6px 6px rgb(255, 104, 29);
+	background-color: rgb(208, 208, 217);
+	margin-left: 12px;
+}
+
+.nav_left
+{
+	min-height: 400px;
+	margin-top: 80px;
+	width: 300px;
+	min-height:750px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+.nav_left img{
+	position: relative;
+	left: -10px;
+}
+
+.nav_left ul
+{
+    list-style-type: none;
+}
+
+.nav_left a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
