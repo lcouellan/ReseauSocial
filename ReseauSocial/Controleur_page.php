@@ -26,6 +26,11 @@
 				header('Location: Controleur/deconnection.php');
 			}
 			break;
+			case 'Reseau':{
+				$_SESSION['page'] = 'Reseau';
+				header('Location: ./');
+			}
+			break;
 			default:{
 				$_SESSION['page'] = 'Accueil';
 				header('Location: ./');
