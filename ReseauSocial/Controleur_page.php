@@ -2,6 +2,21 @@
 	session_start();
 	if(isset($_GET['page'])){
 		switch($_GET['page']){
+			case 'FR':{
+				$_SESSION['lang'] = 'FR';
+				header('Location: ./');
+			}
+			break;
+			case 'EN':{
+				$_SESSION['lang'] = 'EN';
+				header('Location: ./');
+			}
+			break;
+			case 'PO':{
+				$_SESSION['lang'] = 'PO';
+				header('Location: ./');
+			}
+			break;
 			case 'Accueil':{
 				$_SESSION['page'] = 'Accueil';
 				header('Location: ./');
@@ -22,13 +37,13 @@
 				header('Location: ./');
 			}
 			break;
-			case 'Deconnexion':{
-				header('Location: Controleur/deconnection.php');
-			}
-			break;
 			case 'Reseau':{
 				$_SESSION['page'] = 'Reseau';
 				header('Location: ./');
+			}
+			break;
+			case 'Deconnexion':{
+				header('Location: Controleur/deconnection.php');
 			}
 			break;
 			default:{

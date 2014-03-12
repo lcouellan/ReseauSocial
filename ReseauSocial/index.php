@@ -48,12 +48,18 @@
 		<div id="bloc_fond">
 			<section>
 			<?php
-				if(isset($_POST['recherche']))
-					$_SESSION['page'] = "recherche";
+				if(isset($_POST['recherche'])){
+					$_SESSION['page'] = 'Accueil';
+				}
 				if(isset($_SESSION['page'])){
 					switch($_SESSION['page']){
 						case 'Accueil':{
-							require_once("Vue/Accueil.php");
+							if(isset($_POST['recherche'])){
+								require_once("Vue/recherche.php");
+							}
+							else{
+								require_once("Vue/Accueil.php");
+							}
 						}
 						break;
 						case 'Preference':{
@@ -71,13 +77,10 @@
 							require_once("Vue/Inscription.php");
 						}
 						break;
-						case 'recherche':{
-							require_once("Vue/recherche.php");
-						}
-						break;
 						case 'Reseau' :{
 							require_once("Vue/reseau.php");
 						}
+						break;
 						default:{
 							$_SESSION['page'] = 'Accueil';
 							require_once("Vue/Accueil.php");

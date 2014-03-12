@@ -181,3 +181,13 @@ header nav li a{
 	font-size: 18px;
 	font-weight: bold;
 }
+
+
+.drapeau
+{
+	position: absolute;
+	top: 23px;
+	right:20px;
+}
+
+
